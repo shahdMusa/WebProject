@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="/styles/login-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Teachers&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <main>
-        <section id="title">
-            <h1>Qatar University CSE Department </h1>
-        </section>
+<body id="login-page" >
+    <header>
+        <h1>Qatar University CSE Department </h1>
+    </header>
+    <main >
         <section id="logo">
             <div>
                 <img src="/icons/university.png" alt="University logo">
@@ -21,7 +25,7 @@
                     <label for="username">Username:</label>
                 </div>
                 <div>
-                    <input type="text" id="username" name="username" 
+                    <input type="text" id="username" name="username"
                     placeholder="Enter your username" required>
                 </div>
                 <div>
@@ -41,11 +45,16 @@
     </main>
     <footer>
         <hr>
-        <img src="/icons/code.png">
-        <p>Qatar University CSE Department</p>
-        <p> CSEDepartment@qu.edu.qa</p>
-        <p> +974 12345678 </p>
-    </footer>
+        <div class="footer-content">
+            <img src="/icons/code.png" alt="Code logo">
+            <a href="#">Qatar University CSE Department</a>
+            <p> | </p>
+            <a href="mailto:CSEDepartment@qu.edu.qa">CSEDepartment@qu.edu.qa</a>
+            <p> | </p>
+            <a href="tel:+97412345678">+974 12345678</a>
+        </div>
+      </footer>
+      
     
 </body>
 </html>

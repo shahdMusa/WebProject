@@ -1,0 +1,156 @@
+/* Body background */
+#login-page {
+  background-color: #EED6D3;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header container */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8A6E6E;
+  border-radius: 20px;
+  width: 1120px;
+  height: 173px;
+  margin: 40px auto;
+}
+
+/* Header text */
+header h1 {
+  color: white;
+  font-family: 'Days One', sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Main layout: side-by-side */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 60px auto;
+  max-width: 1381px;
+}
+
+/* University logo image */
+#logo img {
+  width: 580px;
+  height: 580px;
+  object-fit: contain;
+}
+
+/* Login fieldset (card) */
+#login- {
+  background-color: #3C3235;
+  width: 524px;
+  height: 417px;
+  padding: 40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Labels in login box */
+#login- label {
+  color: white;
+  font-family: 'Days One', sans-serif; /* You'll need to import this if it's a real font */
+  font-weight: normal;
+  font-size: 40px;
+  margin-top: 12px;
+  display: block;
+}
+
+/* Text input fields */
+#login- input {
+  width: 348px;
+  height: 46px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 8px;
+  font-size: 30px;
+  font-family: 'Teachers', sans-serif; /* Import this */
+  color: #000000;
+  padding: 6px 12px;
+  margin-top: 6px;
+}
+
+/* Placeholder text styling */
+#login- input::placeholder {
+  color: #000000;
+  font-family: 'Teachers', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* Login button */
+#login- button {
+  width: 196px;
+  height: 50px;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 40px;
+  margin: 30px auto 0 auto; /* center horizontally */
+  font-family: 'Days One', sans-serif;
+  font-size: 30px;
+  font-weight: 800; /* extra bold */
+  color: #3C3235;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+/* Horizontal rule in footer */
+footer hr {
+  width: 1381px;
+  height: 8px;
+  background-color: black;
+  border: none;
+  margin: 0 auto 20px auto;
+}
+
+/* Container for footer items (image and text) */
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* space between items */
+}
+
+/* Footer image */
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer text with separators */
+footer p {
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+footer p:not(:last-child)::after {
+  
+  margin-left: 10px;
+}
+
+
