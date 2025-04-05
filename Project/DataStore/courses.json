@@ -1,0 +1,245 @@
+[
+    {
+        "course": "computer science",
+        "coursesList": [
+            {
+                "id": "cmps151",
+                "title": "Programming Concepts",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Jane Doe",
+                        "CRN": "12345",
+                        "capacity": 30,
+                        "enrolledStudents": [
+                            "stu101",
+                            "stu102"
+                        ],
+                        "pendingApproval": [
+                            "stu109"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "cmps205",
+                "title": "Discrete Structures",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Samir Khalil",
+                        "CRN": "12346",
+                        "capacity": 25,
+                        "enrolledStudents": [],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps251",
+                "title": "Object Oriented Programming",
+                "prerequisites": [
+                    "cmps151"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Noor Alnaimi",
+                        "CRN": "12347",
+                        "capacity": 30,
+                        "enrolledStudents": [
+                            "stu222"
+                        ],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps200",
+                "title": "Computer Ethics",
+                "prerequisites": [],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps303",
+                "title": "Data Structures",
+                "prerequisites": [
+                    "cmps251",
+                    "cmps205"
+                ],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps307",
+                "title": "Intro to Project Management and Entrepreneurship",
+                "prerequisites": [],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps310",
+                "title": "Software Engineering",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps323",
+                "title": "Design & Analysis of Algorithms",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps350",
+                "title": "Web Development Fundamentals",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps351",
+                "title": "Fundamentals of Database",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps385",
+                "title": "Computer Security",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps405",
+                "title": "Operating Systems",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps493",
+                "title": "Senior Project I",
+                "prerequisites": [
+                    "cmps310"
+                ],
+                "status": "open",
+                "classes": []
+            },
+            {
+                "id": "cmps499",
+                "title": "Senior Project II",
+                "prerequisites": [
+                    "cmps493"
+                ],
+                "status": "open",
+                "classes": []
+            }
+        ]
+    },
+    {
+        "course": "English",
+        "coursesList": [
+            {
+                "id": "engl202",
+                "title": "English Language I",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Emily Wright",
+                        "CRN": "11111",
+                        "capacity": 35,
+                        "enrolledStudents": [
+                            "stu201",
+                            "stu202"
+                        ],
+                        "pendingApproval": [
+                            "stu203"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "engl203",
+                "title": "English Language II",
+                "prerequisites": [
+                    "engl202"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "John Black",
+                        "CRN": "11112",
+                        "capacity": 35,
+                        "enrolledStudents": [
+                            "stu211",
+                            "stu222"
+                        ],
+                        "pendingApproval": [
+                            "stu233"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "course": "mathematics",
+        "coursesList": [
+            {
+                "id": "math101",
+                "title": "Calculus I",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Layla Hasan",
+                        "CRN": "12346",
+                        "capacity": 40,
+                        "enrolledStudents": [
+                            "stu105"
+                        ],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "math102",
+                "title": "Calculus II",
+                "prerequisites": [
+                    "math101"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Layla Hasan",
+                        "CRN": "12340",
+                        "capacity": 40,
+                        "enrolledStudents": [
+                            "stu106"
+                        ],
+                        "pendingApproval": []
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "stu101",
+        "name": "Lena Adams",
+        "username": "lena123",
+        "password": "password123",
+        "loggedIn": false,
+        "completedCourses": [
+            "cmps151"
+        ],
+        "registeredCourses": []
+    },
+    {
+        "id": "stu201",
+        "name": "Khaled Adams",
+        "username": "kh33443",
+        "password": "password123",
+        "loggedIn": false,
+        "completedCourses": [],
+        "registeredCourses": []
+    },
+    {
+        "id": "stu233",
+        "name": "Maya Ali",
+        "username": "m23m4",
+        "password": "password123",
+        "loggedIn": false,
+        "completedCourses": [
+            "cmps151",
+            "cmps251"
+        ],
+        "registeredCourses": []
+    }
+]
