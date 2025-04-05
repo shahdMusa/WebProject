@@ -10,6 +10,7 @@
                 "classes": [
                     {
                         "instructor": "Jane Doe",
+                        "CRN": "12345",
                         "capacity": 30,
                         "enrolledStudents": [
                             "stu101",
@@ -29,6 +30,7 @@
                 "classes": [
                     {
                         "instructor": "Samir Khalil",
+                        "CRN": "12346",
                         "capacity": 25,
                         "enrolledStudents": [],
                         "pendingApproval": []
@@ -45,6 +47,7 @@
                 "classes": [
                     {
                         "instructor": "Noor Alnaimi",
+                        "CRN": "12347",
                         "capacity": 30,
                         "enrolledStudents": [
                             "stu222"
@@ -162,6 +165,7 @@
                 "classes": [
                     {
                         "instructor": "Emily Wright",
+                        "CRN": "11111",
                         "capacity": 35,
                         "enrolledStudents": [
                             "stu201",
@@ -176,11 +180,14 @@
             {
                 "id": "engl203",
                 "title": "English Language II",
-                "prerequisites": [],
+                "prerequisites": [
+                    "engl202"
+                ],
                 "status": "open",
                 "classes": [
                     {
                         "instructor": "John Black",
+                        "CRN": "11112",
                         "capacity": 35,
                         "enrolledStudents": [
                             "stu211",
@@ -205,6 +212,7 @@
                 "classes": [
                     {
                         "instructor": "Layla Hasan",
+                        "CRN": "12346",
                         "capacity": 40,
                         "enrolledStudents": [
                             "stu105"
@@ -216,11 +224,14 @@
             {
                 "id": "math102",
                 "title": "Calculus II",
-                "prerequisites": [],
+                "prerequisites": [
+                    "math101"
+                ],
                 "status": "open",
                 "classes": [
                     {
                         "instructor": "Layla Hasan",
+                        "CRN": "12340",
                         "capacity": 40,
                         "enrolledStudents": [
                             "stu106"
