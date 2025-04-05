@@ -1,0 +1,13 @@
+[
+    {
+        "id": "stu001",
+        "name": "Lena Adams",
+        "username": "lena123",
+        "password": "password123",
+        "loggedIn": false,
+        "completedCourses": [
+            "cs101"
+        ],
+        "registeredCourses": []
+    }
+]
