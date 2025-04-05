@@ -15,12 +15,38 @@
  
 @media screen and (prefers-color-scheme: dark) {
 } */
- 
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
- 
+
 @media screen and (min-width: 600px) {
+  #register-page main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "search course"
+      "register register";
+  }
+
+  #register-page .search-container {
+    grid-area: search;
+  }
+
+  #register-page #tableContainer {
+    grid-area: course;
+  }
+
+  #register-page #registered-courses {
+    grid-area: register;
+  }
+
+
+  
+
 }
 
 
@@ -59,3 +85,78 @@ body {
   padding: 0;
 }
 
+
+/* register in a course */
+#register-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Search Container */
+#register-page .search-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 450px;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  background: var(--pink-red);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#register-page #searchBtn {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background: var(--Smoky-eggplant);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#register-page #searchBtn:hover {
+  background: var(--muted-mauve);
+}
+
+#register-page input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#register-page #registered-courses {
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+footer img {
+  height: 20px;
+}
+
+footer a {
+  color: var(--Smoky-eggplant);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--muted-mauve);
+}
