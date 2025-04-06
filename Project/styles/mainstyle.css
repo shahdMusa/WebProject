@@ -105,6 +105,54 @@ hr {
   margin-bottom: 0; 
 }
 
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+main nav {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF0F0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+main nav li {
+  list-style: none;
+}
+
+main nav a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3C3235;
+  background-color: #EBD1CF;
+  padding: 12px 18px;
+  border-radius: 15px;
+  white-space: nowrap; /* Prevent line break in text */
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+main nav a:hover {
+  background-color: #d8b9b7;
+}
+
+main nav a.active {
+  background-color: #8A6E6E;
+  color: white;
+}
+
+
 /* Footer styling */
 footer {
     text-align: center;
@@ -174,6 +222,19 @@ footer {
     width: 100%; 
     font-size: 20px; 
   }
+  /* main adj.*/
+
+  main nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  main nav a {
+    font-size: 18px;
+    text-align: center;
+  }
+
 
   /* Footer adjustments */
   footer .footer-content {
