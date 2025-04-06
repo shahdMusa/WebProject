@@ -61,7 +61,7 @@ main {
 /* Labels in login box */
 #login- label {
   color: white;
-  font-family: 'Days One', sans-serif; /* You'll need to import this if it's a real font */
+  font-family: 'Days One', sans-serif;
   font-weight: normal;
   font-size: 40px;
   margin-top: 12px;
@@ -76,7 +76,7 @@ main {
   border: none;
   border-radius: 8px;
   font-size: 30px;
-  font-family: 'Teachers', sans-serif; /* Import this */
+  font-family: 'Teachers', sans-serif;
   color: #000000;
   padding: 6px 12px;
   margin-top: 6px;
@@ -86,7 +86,7 @@ main {
 #login- input::placeholder {
   color: #000000;
   font-family: 'Teachers', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal;
 }
 
@@ -97,10 +97,10 @@ main {
   background-color: #D9D9D9;
   border: none;
   border-radius: 40px;
-  margin: 30px auto 0 auto; /* center horizontally */
+  margin: 30px auto 0 auto;
   font-family: 'Days One', sans-serif;
   font-size: 30px;
-  font-weight: 800; /* extra bold */
+  font-weight: 800;
   color: #3C3235;
   text-align: center;
   cursor: pointer;
@@ -127,12 +127,12 @@ footer hr {
   margin: 0 auto 20px auto;
 }
 
-/* Container for footer items (image and text) */
+/* Container for footer items  */
 footer .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* space between items */
+  gap: 10px;
 }
 
 /* Footer image */
@@ -148,9 +148,59 @@ footer p {
   color: black;
 }
 
-footer p:not(:last-child)::after {
+
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+  /* Adjust the header size and all its elements */
+  header {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  header h1 {
+    font-size: 7vw; 
+    padding: 0 7%; 
+  }
+
+  /*  layout vertically */
+  main {
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px auto;
+  }
+
+  /* Center and resize the university logo */
+  #logo img {
+    width: 70%;
+    height: auto; 
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   
-  margin-left: 10px;
+  /* Footer adjustments */
+  footer .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-top: 10px; 
+  }
+
+  footer hr {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 5vw !important; 
+  }
+
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
 }
-
-
