@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <link rel="stylesheet" href="/styles/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,8 +17,10 @@
                 <h1>CSE Student Management</h1>
             </div>
             <div>
-                <img src="/icons/user.png" alt="user logo">
-                <button type="button">logout</button>
+                <fieldset id="logout">
+                    <img src="/icons/user.png" alt="user logo">
+                    <button type="button">logout</button>
+                </fieldset>
             </div>
         </section>
         <hr>
@@ -45,11 +49,15 @@
     </main>
     <footer>
         <hr>
-        <img src="/icons/code.png">
-        <p>Qatar University CSE Department</p>
-        <p> CSEDepartment@qu.edu.qa</p>
-        <p> +974 12345678 </p>
-    </footer>
+        <div class="footer-content">
+            <img src="/icons/code.png" alt="Code logo">
+            <a href="#">Qatar University CSE Department</a>
+            <p> | </p>
+            <a href="mailto:CSEDepartment@qu.edu.qa">CSEDepartment@qu.edu.qa</a>
+            <p> | </p>
+            <a href="tel:+97412345678">+974 12345678</a>
+        </div>
+      </footer>
     
 </body>
 </html>
