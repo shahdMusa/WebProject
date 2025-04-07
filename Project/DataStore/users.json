@@ -1,0 +1,60 @@
+[
+    {
+        "username": "admin",
+        "password": "admin123",
+        "role": "admin",
+        "fullName": "Ahmed Al-Fahad",
+        "email": "ahmed.al-fahad@qu.edu.qa",
+        "phone": "+97412345678"
+    },
+    {
+        "username": "student1",
+        "password": "student123",
+        "role": "student",
+        "fullName": "Fatima Al-Mansoori",
+        "email": "fatima.almansoori@qu.edu.qa",
+        "phone": "+97498765432"
+    },
+    {
+        "username": "student2",
+        "password": "student456",
+        "role": "student",
+        "fullName": "Ali Al-Sayed",
+        "email": "ali.alsayed@qu.edu.qa",
+        "phone": "+97456789123"
+    },
+    {
+        "username": "instructor1",
+        "password": "instructor123",
+        "role": "instructor",
+        "fullName": "Dr. Sara Khaled",
+        "email": "sara.khaled@qu.edu.qa",
+        "phone": "+97411223344",
+        "courses": ["CSE101", "CSE102"]
+    },
+    {
+        "username": "instructor2",
+        "password": "instructor456",
+        "role": "instructor",
+        "fullName": "Prof. John Doe",
+        "email": "john.doe@qu.edu.qa",
+        "phone": "+97455667788",
+        "courses": ["CSE201", "CSE202"]
+    },
+    {
+        "username": "student3",
+        "password": "student789",
+        "role": "student",
+        "fullName": "Laila Al-Hamad",
+        "email": "laila.alhamad@qu.edu.qa",
+        "phone": "+97433445566"
+    },
+    {
+        "username": "admin2",
+        "password": "admin456",
+        "role": "admin",
+        "fullName": "Omar Al-Rashid",
+        "email": "omar.alrashid@qu.edu.qa",
+        "phone": "+97477889900"
+    }
+]
