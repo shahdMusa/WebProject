@@ -123,7 +123,7 @@ main nav {
   background-color: #FFF0F0;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px #00000033;
 }
 
 main nav li {
@@ -195,13 +195,14 @@ footer {
 
 
 /* For mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1250px) {
   #title div:first-child {
     width: 20%; 
   }
 
   #title h1 {
-    font-size: 40px; 
+    font-size: 50px; 
+    font-weight: bold;
     width: 100%;
     height: auto;
     padding: 10px;

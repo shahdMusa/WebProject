@@ -303,3 +303,101 @@ footer {
     font-size: 20px;
     color: black;
   }
+
+  @media screen and (max-width: 1250px) {
+    #title div:first-child {
+        width: 20%; 
+      }
+    
+      #title h1 {
+        font-size: 50px; 
+        font-weight: bold;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+      }
+    
+      #logout {
+        width: 100%; 
+        margin-top: 10px;
+      }
+    
+      #logout img {
+        width: 0; 
+        height: 0;
+        display: none; 
+      }
+    
+      #logout button {
+        width: 100%; 
+        font-size: 20px; 
+      }
+    /*
+
+    #title {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    
+      #title div:first-child,
+      #title div:nth-child(2),
+      #title div:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    
+      #title h1 {
+        width: 90%;
+        font-size: 32px;
+        height: auto;
+        line-height: normal;
+        padding: 10px;
+      }
+    
+      #logout {
+        flex-direction: column;
+        gap: 5px;
+      }
+    
+      #logout img {
+        width: 50px;
+        height: auto;
+      }
+    
+      #logout button {
+        font-size: 18px;
+        padding: 6px 10px;
+      }
+
+      */
+
+
+      /*------------------------------------------*/
+
+
+      .search-header {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 15px;
+      }
+    
+      .search-header h2 {
+        font-size: 28px;
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+      }
+    
+      .main-button {
+        font-size: 18px;
+        padding: 8px 16px;
+      }
+    
+      .spacer {
+        display: none;
+      }
+
+  }
