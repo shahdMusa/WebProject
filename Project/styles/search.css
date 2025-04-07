@@ -215,8 +215,54 @@ header {
     background-color: #d8b6b0;
   }
   
-
-
+  /* Courses Table Section */
+.courses-table {
+    width: 100%;
+    max-width: 1650px;
+    margin: 20px auto;
+    background-color: #E8B4B8;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto; /* allow horizontal scroll on small screens */
+  }
+  
+  .courses-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Days One', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .courses-table thead {
+    background-color: #8A6E6E;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .courses-table thead th {
+    padding: 15px 10px;
+    border-radius: 10px;
+  }
+  
+  .courses-table tbody td {
+    padding: 12px 10px;
+    background-color: #EED6D3;
+    border-radius: 10px;
+    margin: 5px 0;
+  }
+  
+  .courses-table tbody tr {
+    margin-bottom: 10px;
+    display: table-row;
+  }
+  
+  .courses-table tbody tr:nth-child(even) td {
+    background-color: #f1dfdc;
+  }
+  
 
 
   /* Footer styling */
