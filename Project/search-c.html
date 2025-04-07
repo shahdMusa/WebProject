@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Courses</title>
+  <link rel="stylesheet" href="/Project/styles/search.css">
+</head>
+<body>
+
+  <header>
+    <section id="title">
+      <div>
+        <img src="/Project/icons/university.png" alt="University logo">
+      </div>
+      <div>
+        <h1>CSE STUDENT MANAGEMENT</h1>
+      </div>
+      <div>
+        <fieldset id="logout">
+          <img src="/Project/icons/user.png" alt="user logo">
+          <button type="button">Log out</button>
+        </fieldset>
+      </div>
+    </section>
+    <hr>
+  </header>
+
+  <main>
+    <!-- Section Header -->
+    <section class="search-header">
+      <h2><img src="/Project/icons/search.png" alt="Search icon"> Search Courses</h2>
+    </section>
+
+    <!-- Search Bar and Add Button -->
+    <section class="search-controls">
+      <input type="text" placeholder="search course no, name or category">
+      <button type="submit">Search</button>
+      <button class="add-course">+ Add Course</button>
+    </section>
+
+    <!-- Table for displaying courses -->
+    <section class="courses-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Course No.</th>
+            <th>Course Name</th>
+            <th>Instructor</th>
+            <th>Status</th>
+            <th>Time / Day</th>
+            <th>Updated Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be dynamically inserted using JS -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Add Course Section -->
+    <section class="add-course-section">
+      <h3>Add A New Course:</h3>
+      <div class="course-form">
+        <!-- Future form elements go here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="footer-content">
+      <img src="/icons/code.png" alt="Code logo">
+      <a href="#">Qatar University CSE Department</a>
+      <p> | </p>
+      <a href="mailto:CSEDepartment@qu.edu.qa">CSEDepartment@qu.edu.qa</a>
+      <p> | </p>
+      <a href="tel:+97412345678">+974 12345678</a>
+    </div>
+  </footer>
+
+</body>
+</html>
