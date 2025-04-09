@@ -34,10 +34,15 @@ function loginUser(username, password){
 function redirectUser(user) {
     
     if (user.role === 'admin') {
-        window.location.href = '/admin-page.html';  
+        window.location.href = 'admin-page.html';  
     } else if (user.role === 'student') {
-        window.location.href = '/main.html';  
+        window.location.href = 'main.html';  
     } else if (user.role === 'instructor') {
-        window.location.href = '/instructor-page.html';  
+        window.location.href = 'instructor-page.html';   
     }
 }
+if (user) {
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
+    redirectUser(user);
+}
+
