@@ -1,34 +1,31 @@
 [
     {
-        "id": "stu101",
         "name": "Lena Adams",
         "username": "lena123",
-        "password": "password123",
-        "loggedIn": false,
+        "loggedIn": true,
         "completedCourses": [
-            "cmps151"
+            {"course":"cmps151", "grade" :"A"}
         ],
-        "registeredCourses": []
+        "registeredCourses": [],
+        "pendingCourses": []
     },
     {
-        "id": "stu201",
         "name": "Khaled Adams",
         "username": "kh33443",
-        "password": "password123",
         "loggedIn": false,
         "completedCourses": [],
-        "registeredCourses": []
+        "registeredCourses": [],
+        "pendingCourses": []
     },
     {
-        "id": "stu233",
         "name": "Maya Ali",
         "username": "m23m4",
-        "password": "password123",
         "loggedIn": false,
         "completedCourses": [
-            "cmps151",
-            "cmps251"
+            {"course":"cmps151", "grade" :"A"},
+            {"course":"cmps251", "grade" :"B+"}
         ],
-        "registeredCourses": []
+        "registeredCourses": [],
+        "pendingCourses": []
     }
 ]

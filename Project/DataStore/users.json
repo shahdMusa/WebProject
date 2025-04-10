@@ -8,19 +8,19 @@
         "phone": "+97412345678"
     },
     {
-        "username": "student1",
+        "username": "lena123",
         "password": "student123",
         "role": "student",
-        "fullName": "Fatima Al-Mansoori",
-        "email": "fatima.almansoori@qu.edu.qa",
+        "fullName": "Lena Adams",
+        "email": "Lena_Adams@qu.edu.qa",
         "phone": "+97498765432"
     },
     {
-        "username": "student2",
+        "username": "kh33443",
         "password": "student456",
         "role": "student",
-        "fullName": "Ali Al-Sayed",
-        "email": "ali.alsayed@qu.edu.qa",
+        "fullName": "Khaled Adams",
+        "email": "Khaled_Adams@qu.edu.qa",
         "phone": "+97456789123"
     },
     {
@@ -42,11 +42,11 @@
         "courses": ["CSE201", "CSE202"]
     },
     {
-        "username": "student3",
+        "username": "m23m4",
         "password": "student789",
         "role": "student",
-        "fullName": "Laila Al-Hamad",
-        "email": "laila.alhamad@qu.edu.qa",
+        "fullName": "Maya Ali",
+        "email": "Maya.Ali@qu.edu.qa",
         "phone": "+97433445566"
     },
     {
