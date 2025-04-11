@@ -115,14 +115,15 @@ footer {
   margin-top: 80px;
   font-family: 'Days One', sans-serif;
   font-size: 20px;
-  color: black;
+  color: #3C3235;
+  background-color: transparent;
 }
 
 /* Horizontal rule in footer */
 footer hr {
   width: 1381px;
   height: 8px;
-  background-color: black;
+  background-color: #3C3235;
   border: none;
   margin: 0 auto 20px auto;
 }
@@ -145,13 +146,19 @@ footer img {
 footer p {
   font-family: 'Days One', sans-serif;
   font-size: 20px;
-  color: black;
+  color: #3C3235;
+}
+footer a {
+  text-decoration: none;
+  color: #3c3235;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
 }
 
 
 
 /* For mobile screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   /* Adjust the header size and all its elements */
   header {
     width: 90%;
@@ -202,5 +209,8 @@ footer p {
   footer img {
     width: 40px;
     height: 40px;
+  }
+  footer .separator {
+    display: none;
   }
 }

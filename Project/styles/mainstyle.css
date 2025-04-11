@@ -153,44 +153,50 @@ main nav a.active {
 }
 
 
-/* Footer styling */
 footer {
-    text-align: center;
-    margin-top: 80px;
-    font-family: 'Days One', sans-serif;
-    font-size: 20px;
-    color: black;
-  }
-  
-  /* Horizontal rule in footer */
-  footer hr {
-    width: 98%;
-    height: 8px;
-    background-color: black;
-    border: none;
-    margin: 0 auto 20px auto;
-  }
-  
-  /* Container for footer items  */
-  footer .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  /* Footer image */
-  footer img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  /* Footer text with separators */
-  footer p {
-    font-family: 'Days One', sans-serif;
-    font-size: 20px;
-    color: black;
-  }
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: #3C3235;
+  background-color: transparent;
+}
+
+/* Horizontal rule in footer */
+footer hr {
+  width: 1381px;
+  height: 8px;
+  background-color: #3C3235;
+  border: none;
+  margin: 0 auto 20px auto;
+}
+
+/* Container for footer items  */
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Footer image */
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer text with separators */
+footer p {
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: #3C3235;
+}
+footer a {
+  text-decoration: none;
+  color: #3c3235;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+}
 
 
 
@@ -257,5 +263,8 @@ footer {
   footer img {
     width: 40px;
     height: 40px;
+  }
+  footer .separator {
+    display: none;
   }
 }

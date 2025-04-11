@@ -266,19 +266,20 @@ header {
 
 
   /* Footer styling */
-footer {
+  footer {
     text-align: center;
     margin-top: 80px;
     font-family: 'Days One', sans-serif;
     font-size: 20px;
-    color: black;
+    color: #3C3235;
+    background-color: transparent;
   }
   
   /* Horizontal rule in footer */
   footer hr {
-    width: 98%;
+    width: 1381px;
     height: 8px;
-    background-color: black;
+    background-color: #3C3235;
     border: none;
     margin: 0 auto 20px auto;
   }
@@ -301,7 +302,13 @@ footer {
   footer p {
     font-family: 'Days One', sans-serif;
     font-size: 20px;
-    color: black;
+    color: #3C3235;
+  }
+  footer a {
+    text-decoration: none;
+    color: #3c3235;
+    font-family: 'Days One', sans-serif;
+    font-size: 20px;
   }
 
   @media screen and (max-width: 1250px) {
@@ -359,5 +366,28 @@ footer {
       .spacer {
         display: none;
       }
+      /* Footer adjustments */
+  footer .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-top: 10px; 
+  }
 
+  footer hr {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 5vw !important; 
+  }
+
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+  footer .separator {
+    display: none;
+  }
   }
