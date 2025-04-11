@@ -310,6 +310,10 @@ header {
     font-family: 'Days One', sans-serif;
     font-size: 20px;
   }
+  footer hr {
+    width: 98%;
+    margin-bottom: 20px;
+  }
 
   @media screen and (max-width: 1250px) {
     #title div:first-child {

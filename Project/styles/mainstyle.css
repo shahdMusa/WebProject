@@ -197,6 +197,10 @@ footer a {
   font-family: 'Days One', sans-serif;
   font-size: 20px;
 }
+footer hr {
+  width: 98%;
+  margin-bottom: 20px;
+}
 
 
 
