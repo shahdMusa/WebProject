@@ -11,6 +11,7 @@
         "username": "lena123",
         "password": "student123",
         "role": "student",
+        "loggedIn": false,
         "fullName": "Lena Adams",
         "email": "Lena_Adams@qu.edu.qa",
         "phone": "+97498765432"
@@ -19,6 +20,7 @@
         "username": "kh33443",
         "password": "student456",
         "role": "student",
+        "loggedIn": false,
         "fullName": "Khaled Adams",
         "email": "Khaled_Adams@qu.edu.qa",
         "phone": "+97456789123"
@@ -45,6 +47,7 @@
         "username": "m23m4",
         "password": "student789",
         "role": "student",
+        "loggedIn": false,
         "fullName": "Maya Ali",
         "email": "Maya.Ali@qu.edu.qa",
         "phone": "+97433445566"

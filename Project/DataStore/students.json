@@ -2,7 +2,7 @@
     {
         "name": "Lena Adams",
         "username": "lena123",
-        "loggedIn": true,
+        "loggedIn": false,
         "completedCourses": [
             {"course":"cmps151", "grade" :"A"}
         ],
