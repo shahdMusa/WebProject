@@ -1,3 +1,4 @@
+<<<<<<< HEAD:The last version/Project/DataStore/students.json
 [
     {
         "name": "Lena Adams",
@@ -28,4 +29,36 @@
         "registeredCourses": [],
         "pendingCourses": []
     }
+=======
+[
+    {
+        "name": "Lena Adams",
+        "username": "lena123",
+        "loggedIn": false,
+        "completedCourses": [
+            {"course":"cmps151", "grade" :"A"}
+        ],
+        "registeredCourses": [],
+        "pendingCourses": []
+    },
+    {
+        "name": "Khaled Adams",
+        "username": "kh33443",
+        "loggedIn": false,
+        "completedCourses": [],
+        "registeredCourses": [],
+        "pendingCourses": []
+    },
+    {
+        "name": "Maya Ali",
+        "username": "m23m4",
+        "loggedIn": true,
+        "completedCourses": [
+            {"course":"cmps151", "grade" :"A"},
+            {"course":"cmps251", "grade" :"B+"}
+        ],
+        "registeredCourses": [],
+        "pendingCourses": []
+    }
+>>>>>>> 3cbe719085d5a40e7bd742a382cc5f7c810eda6d:Project/DataStore/students.json
 ]
