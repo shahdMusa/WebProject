@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Courses</title>
+  <link rel="stylesheet" href="/Project/styles/search.css">
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <section id="title">
+      <div>
+        <img src="/Project/icons/university.png" alt="University logo">
+      </div>
+      <div>
+        <h1>CSE STUDENT MANAGEMENT</h1>
+      </div>
+      <div>
+        <fieldset id="logout">
+          <img src="/Project/icons/user.png" alt="user logo">
+          <button type="button">Log out</button>
+        </fieldset>
+      </div>
+    </section>
+    <hr>
+  </header>
+
+  <main>
+    <!-- Section Header -->
+    <section class="search-header">
+        <a href="main.html" class="main-button">Main</a>
+        <h2><img src="/Project/icons/search.png" alt="Search icon"> Search Courses</h2>
+        <div class="spacer"></div>
+    </section>
+
+    <!-- Search Bar and Add Button -->
+    <section class="search-controls">
+        <img src="/Project/icons/search.png" alt="Search icon">
+        <input type="text" id="searchInput" placeholder="search  name or category">
+        
+    </section>
+
+    <!-- Table for displaying courses -->
+    <section class="courses-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Course No.</th>
+            <th>Course Name</th>
+            <th>Instructor</th>
+            <th>Status</th>
+            <th>Time / Day</th>
+            <th>Capacity</th>
+          </tr>
+        </thead>
+        <tbody id="courseTableBody"> 
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <hr>
+    <div class="footer-content">
+        <img src="/Project/icons/code.png" alt="Code logo">
+        <a href="#">Qatar University CSE Department</a>
+        <p class="separator"> | </p>
+        <a href="mailto:CSEDepartment@qu.edu.qa">CSEDepartment@qu.edu.qa</a>
+        <p class="separator"> | </p>
+        <a href="tel:+97412345678">+974 12345678</a>
+    </div>
+</footer>
+
+  <script src="/Project/Scripts/search.js"></script>
+</body>
+</html>

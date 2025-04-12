@@ -1,0 +1,385 @@
+body{
+    background-color: #EED6D3
+}
+/* Header styling */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Title section */
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* First div: University logo */
+#title div:first-child {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+#title div:first-child img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Second div: Title with <h1> */
+#title div:nth-child(2) {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title h1 {
+  background-color: #8A6E6E;
+  color: white;
+  font-family: 'Days One', sans-serif;
+  font-size: 55px;
+  width: 965px;
+  height: 83px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 83px;
+}
+
+/* Third div: Logout section */
+#title div:last-child {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logout {
+  background-color: #3C3235;
+  border-radius: 20px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#logout img {
+  width: 70px;
+  height: 50px;
+}
+
+#logout button {
+  background-color: #3C3235;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 8px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+#logout button:hover {
+  background-color: #B8B8B8;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 8px solid black;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+  #table table,.grades-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+    background-color: #E8B4B8;
+  }
+  
+  #table th, #table td ,.grades-table th, .grades-table td{
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    background-color: #E8B4B8;
+  }
+  
+  #table th, .grades-table th {
+    background-color: #E8B4B8;
+    font-weight: bold;
+  }
+  
+  #table tr:last-child td, .grades-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  #table tr:hover td {
+    background-color: #EED6D3;
+  }
+  .high {
+    background-color: #8A6E6E !important;
+    font-weight: bold;
+  }
+select{
+  border-radius: 3rem;
+  background-color: #EED6D3;
+}
+
+  #nav {
+    background-color: #E8B4B8;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    font-weight: bold;
+    padding: 10px; 
+    gap: 10px; 
+    border-radius: 3rem;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #courseSearch {
+    padding: 5px;
+    border-radius: 3rem;
+    width: 350px;
+    background-color: #EED6D3;
+
+  }
+  
+  #searchBtn img {
+    display: block; 
+    background-color: #EED6D3;
+    padding: 0.2rem;
+    border-radius: 3rem;
+  }
+#save-status-btn {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 3rem;
+  background-color: #E8B4B8;
+  width: 150px;
+  margin: 0 auto;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+}
+#save-status-btn:hover {
+  background-color:#EED6D3;
+
+}
+#addcourse {
+  margin-top: 30px;
+  background-color: #8A6E6E;
+  border-radius: 3rem;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#addcourse h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #3C3235;
+  padding: 0.5rem;
+  width: 350px;
+  border-radius: 3rem;
+}
+#course-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+#course-form input, #course-form select{
+  height: 30px;
+  border-radius: 2rem;
+  background-color: #EED6D3;
+  border-radius: 2rem;
+  margin-bottom: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#course-form button, .submit-btn {
+  grid-column: span 2;
+  padding: 7px;
+  background-color: #E8B4B8;
+  border-radius: 3rem;
+  text-align: center;
+  width: 200px;
+}
+
+#course-form button:hover {
+  background-color: #EED6D3;
+}
+main {
+  text-align: center;
+}
+
+.class-selection{
+  border-radius: 3rem;
+  background-color: #8A6E6E;
+  margin-bottom: 20px;
+  padding: 0.7rem;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+#classSelect{
+  padding: 0.2rem;
+  background-color: #EED6D3;
+  border-radius: 3rem;
+  width: 200px;
+}
+.submit-btn{
+  margin-top: 20px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: #3C3235;
+  background-color: transparent;
+}
+
+/* Horizontal rule in footer */
+footer hr {
+  width: 1381px;
+  height: 8px;
+  background-color: #3C3235;
+  border: none;
+  margin: 0 auto 20px auto;
+}
+
+/* Container for footer items  */
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Footer image */
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer text with separators */
+footer p {
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: #3C3235;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3c3235;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+}
+
+footer hr {
+  width: 98%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  #title div:first-child {
+    width: 20%;
+  }
+
+  #title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  #logout {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #logout img {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  #logout button {
+    width: 100%;
+    font-size: 20px;
+  }
+
+
+  /*------------------------------------------*/
+
+
+  .search-header {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .search-header h2 {
+    font-size: 28px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .main-button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  /* Footer adjustments */
+  footer .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  footer hr {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 5vw !important;
+  }
+
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  footer .separator {
+    display: none;
+  }
+}

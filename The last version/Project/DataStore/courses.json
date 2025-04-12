@@ -1,0 +1,353 @@
+[
+    {
+        "subject": "computer science",
+        "coursesList": [
+            {
+                "id": "cmps151",
+                "name": "Programming Concepts",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Prof. John Doe",
+                        "CRN": "12345",
+                        "schedule": "Mon/Wed - 9:00 AM - 11:00 AM",
+                        "capacity": 30,
+                        "enrolledStudents": [],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps205",
+                "name": "Discrete Structures",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Samir Khalil",
+                        "CRN": "12346",
+                        "schedule": "Tue/Thu - 10:00 AM - 12:00 PM",
+                        "capacity": 25,
+                        "enrolledStudents": [],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps251",
+                "name": "Object Oriented Programming",
+                "prerequisites": [
+                    "cmps151"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Noor Alnaimi",
+                        "CRN": "12347",
+                        "schedule": "Mon/Wed - 12:00 PM - 2:00 PM",
+                        "capacity": 30,
+                        "enrolledStudents": [
+                            "stu222"
+                        ],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps200",
+                "name": "Computer Ethics",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Dr. Sara Khaled",
+                        "CRN": "12360",
+                        "schedule": "Mon/Wed - 2:00 PM - 4:00 PM",
+                        "capacity": 40,
+                        "enrolledStudents": ["lena123", "kh33443"],
+                        "pendingApproval": []
+                    },
+                    {
+                        "instructor": "Laura Johnson",
+                        "CRN": "12361",
+                        "schedule": "Tue/Thu - 9:00 AM - 11:00 AM",
+                        "capacity": 30,
+                        "enrolledStudents": ["stu118", "stu119"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps303",
+                "name": "Data Structures",
+                "prerequisites": [
+                    "cmps251"
+                ],
+                "status": "open",
+                "classes": [{
+                    "instructor": "Noor Alnaimi",
+                    "CRN": "14569",
+                    "schedule": "Mon/Wed - 12:00 PM - 2:00 PM",
+                    "capacity": 30,
+                    "enrolledStudents": [
+                        "m23m4"
+                    ],
+                    "pendingApproval": []
+                }]
+            },
+            {
+                "id": "cmps307",
+                "name": "Intro to Project Management and Entrepreneurship",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "John Smith",
+                        "CRN": "12350",
+                        "schedule": "Mon/Wed - 1:00 PM - 3:00 PM",
+                        "capacity": 40,
+                        "enrolledStudents": [],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps310",
+                "name": "Software Engineering",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Ali Khan",
+                        "CRN": "12351",
+                        "schedule": "Tue/Thu - 9:00 AM - 11:00 AM",
+                        "capacity": 35,
+                        "enrolledStudents": ["stu101", "stu102"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps323",
+                "name": "Design & Analysis of Algorithms",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Sophie Lee",
+                        "CRN": "12352",
+                        "schedule": "Mon/Wed - 3:00 PM - 5:00 PM",
+                        "capacity": 30,
+                        "enrolledStudents": ["stu103", "stu104", "stu105"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps350",
+                "name": "Web Development Fundamentals",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Mark Johnson",
+                        "CRN": "12353",
+                        "schedule": "Tue/Thu - 11:00 AM - 1:00 PM",
+                        "capacity": 40,
+                        "enrolledStudents": ["stu106", "stu107"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps351",
+                "name": "Fundamentals of Database",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Rachel Green",
+                        "CRN": "12354",
+                        "schedule": "Mon/Wed - 9:00 AM - 11:00 AM",
+                        "capacity": 30,
+                        "enrolledStudents": ["stu108", "stu109"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps385",
+                "name": "Computer Security",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Michael Davis",
+                        "CRN": "12355",
+                        "schedule": "Tue/Thu - 1:00 PM - 3:00 PM",
+                        "capacity": 35,
+                        "enrolledStudents": ["stu110"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps405",
+                "name": "Operating Systems",
+                "prerequisites": [
+                    "cmps303"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Tina Brown",
+                        "CRN": "12356",
+                        "schedule": "Mon/Wed - 2:00 PM - 4:00 PM",
+                        "capacity": 30,
+                        "enrolledStudents": ["stu111", "stu112"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps493",
+                "name": "Senior Project I",
+                "prerequisites": [
+                    "cmps310"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Lucas Wilson",
+                        "CRN": "12357",
+                        "schedule": "Tue/Thu - 9:00 AM - 11:00 AM",
+                        "capacity": 20,
+                        "enrolledStudents": ["stu113", "stu114"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "cmps499",
+                "name": "Senior Project II",
+                "prerequisites": [
+                    "cmps493"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Anna Taylor",
+                        "CRN": "12358",
+                        "schedule": "Mon/Wed - 10:00 AM - 12:00 PM",
+                        "capacity": 15,
+                        "enrolledStudents": ["stu115"],
+                        "pendingApproval": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subject": "English",
+        "coursesList": [
+            {
+                "id": "engl202",
+                "name": "English Language I",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Emily Wright",
+                        "CRN": "11111",
+                        "schedule": "Mon/Wed - 12:00 PM - 2:00 PM",
+                        "capacity": 35,
+                        "enrolledStudents": [
+                            "stu201",
+                            "stu202"
+                        ],
+                        "pendingApproval": [
+                            "stu203"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "engl203",
+                "name": "English Language II",
+                "prerequisites": [
+                    "engl202"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "John Black",
+                        "CRN": "11112",
+                        "schedule": "Tue/Thu - 1:00 PM - 3:00 PM",
+                        "capacity": 35,
+                        "enrolledStudents": [
+                            "stu211",
+                            "stu222"
+                        ],
+                        "pendingApproval": [
+                            "stu233"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subject": "mathematics",
+        "coursesList": [
+            {
+                "id": "math101",
+                "name": "Calculus I",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Layla Hasan",
+                        "CRN": "12346",
+                        "schedule": "Mon/Wed - 4:00 PM - 6:00 PM",
+                        "capacity": 40,
+                        "enrolledStudents": [
+                            "stu105"
+                        ],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
+                "id": "math102",
+                "name": "Calculus II",
+                "prerequisites": [
+                    "math101"
+                ],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Layla Hasan",
+                        "CRN": "12340",
+                        "schedule": "Tue/Thu - 11:00 AM - 1:00 PM",
+                        "capacity": 40,
+                        "enrolledStudents": [
+                            "stu106"
+                        ],
+                        "pendingApproval": []
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,45 +1,50 @@
 [
     {
-        "course": "computer science",
+        "subject": "computer science",
         "coursesList": [
             {
                 "id": "cmps151",
-                "title": "Programming Concepts",
+                "name": "Programming Concepts",
                 "prerequisites": [],
                 "status": "open",
                 "classes": [
                     {
                         "instructor": "Jane Doe",
                         "CRN": "12345",
+                        "schedule": "Mon/Wed - 9:00 AM - 11:00 AM",
                         "capacity": 30,
-                        "enrolledStudents": [
-                            "stu101",
-                            "stu102"
-                        ],
-                        "pendingApproval": [
-                            "stu109"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "cmps205",
-                "title": "Discrete Structures",
-                "prerequisites": [],
-                "status": "open",
-                "classes": [
+                        "enrolledStudents": [],
+                        "pendingApproval": []
+                    },
                     {
-                        "instructor": "Samir Khalil",
-                        "CRN": "12346",
-                        "capacity": 25,
+                        "instructor": "Jane Doe",
+                        "CRN": "34563",
+                        "schedule": "Mon/Wed - 9:00 AM - 11:00 AM",
+                        "capacity": 20,
                         "enrolledStudents": [],
                         "pendingApproval": []
                     }
                 ]
             },
             {
+                "id": "cmps205",
+                "name": "Discrete Structures",
+                "prerequisites": [],
+                "status": "open",
+                "classes": [
+                    {
+                        "instructor": "Samir Khalil",
+                        "CRN": "12346",
+                        "schedule": "Tue/Thu - 10:00 AM - 12:00 PM",
+                        "capacity": 1,
+                        "enrolledStudents": ["stu222"],
+                        "pendingApproval": []
+                    }
+                ]
+            },
+            {
                 "id": "cmps251",
-                "title": "Object Oriented Programming",
+                "name": "Object Oriented Programming",
                 "prerequisites": [
                     "cmps151"
                 ],
@@ -48,6 +53,7 @@
                     {
                         "instructor": "Noor Alnaimi",
                         "CRN": "12347",
+                        "schedule": "Mon/Wed - 12:00 PM - 2:00 PM",
                         "capacity": 30,
                         "enrolledStudents": [
                             "stu222"
@@ -58,31 +64,52 @@
             },
             {
                 "id": "cmps200",
-                "title": "Computer Ethics",
+                "name": "Computer Ethics",
                 "prerequisites": [],
-                "status": "open",
-                "classes": []
+                "status": "close",
+                "classes": [
+                    {
+                        "instructor": "Noor Alnaimi",
+                        "CRN": "12999",
+                        "schedule": "Mon/Wed - 12:00 PM - 2:00 PM",
+                        "capacity": 30,
+                        "enrolledStudents": [
+                            "stu222"
+                        ],
+                        "pendingApproval": []
+                    }
+                ]
             },
             {
                 "id": "cmps303",
-                "title": "Data Structures",
+                "name": "Data Structures",
                 "prerequisites": [
-                    "cmps251",
-                    "cmps205"
+                    "cmps251"
                 ],
                 "status": "open",
-                "classes": []
+                "classes": [
+                    {
+                        "instructor": "Noor Alnaimi",
+                        "CRN": "14569",
+                        "schedule": "Mon/Wed - 12:00 PM - 2:00 PM",
+                        "capacity": 30,
+                        "enrolledStudents": [
+                            "m23m4"
+                        ],
+                        "pendingApproval": []
+                    }
+                ]
             },
             {
                 "id": "cmps307",
-                "title": "Intro to Project Management and Entrepreneurship",
+                "name": "Intro to Project Management and Entrepreneurship",
                 "prerequisites": [],
                 "status": "open",
                 "classes": []
             },
             {
                 "id": "cmps310",
-                "title": "Software Engineering",
+                "name": "Software Engineering",
                 "prerequisites": [
                     "cmps303"
                 ],
@@ -91,7 +118,7 @@
             },
             {
                 "id": "cmps323",
-                "title": "Design & Analysis of Algorithms",
+                "name": "Design & Analysis of Algorithms",
                 "prerequisites": [
                     "cmps303"
                 ],
@@ -100,7 +127,7 @@
             },
             {
                 "id": "cmps350",
-                "title": "Web Development Fundamentals",
+                "name": "Web Development Fundamentals",
                 "prerequisites": [
                     "cmps303"
                 ],
@@ -109,7 +136,7 @@
             },
             {
                 "id": "cmps351",
-                "title": "Fundamentals of Database",
+                "name": "Fundamentals of Database",
                 "prerequisites": [
                     "cmps303"
                 ],
@@ -118,7 +145,7 @@
             },
             {
                 "id": "cmps385",
-                "title": "Computer Security",
+                "name": "Computer Security",
                 "prerequisites": [
                     "cmps303"
                 ],
@@ -127,7 +154,7 @@
             },
             {
                 "id": "cmps405",
-                "title": "Operating Systems",
+                "name": "Operating Systems",
                 "prerequisites": [
                     "cmps303"
                 ],
@@ -136,7 +163,7 @@
             },
             {
                 "id": "cmps493",
-                "title": "Senior Project I",
+                "name": "Senior Project I",
                 "prerequisites": [
                     "cmps310"
                 ],
@@ -145,7 +172,7 @@
             },
             {
                 "id": "cmps499",
-                "title": "Senior Project II",
+                "name": "Senior Project II",
                 "prerequisites": [
                     "cmps493"
                 ],
@@ -155,17 +182,18 @@
         ]
     },
     {
-        "course": "English",
+        "subject": "English",
         "coursesList": [
             {
                 "id": "engl202",
-                "title": "English Language I",
+                "name": "English Language I",
                 "prerequisites": [],
                 "status": "open",
                 "classes": [
                     {
                         "instructor": "Emily Wright",
                         "CRN": "11111",
+                        "schedule": "Mon/Wed - 12:00 PM - 2:00 PM",
                         "capacity": 35,
                         "enrolledStudents": [
                             "stu201",
@@ -179,7 +207,7 @@
             },
             {
                 "id": "engl203",
-                "title": "English Language II",
+                "name": "English Language II",
                 "prerequisites": [
                     "engl202"
                 ],
@@ -188,6 +216,7 @@
                     {
                         "instructor": "John Black",
                         "CRN": "11112",
+                        "schedule": "Tue/Thu - 1:00 PM - 3:00 PM",
                         "capacity": 35,
                         "enrolledStudents": [
                             "stu211",
@@ -202,17 +231,18 @@
         ]
     },
     {
-        "course": "mathematics",
+        "subject": "mathematics",
         "coursesList": [
             {
                 "id": "math101",
-                "title": "Calculus I",
+                "name": "Calculus I",
                 "prerequisites": [],
                 "status": "open",
                 "classes": [
                     {
                         "instructor": "Layla Hasan",
                         "CRN": "12346",
+                        "schedule": "Mon/Wed - 4:00 PM - 6:00 PM",
                         "capacity": 40,
                         "enrolledStudents": [
                             "stu105"
@@ -223,7 +253,7 @@
             },
             {
                 "id": "math102",
-                "title": "Calculus II",
+                "name": "Calculus II",
                 "prerequisites": [
                     "math101"
                 ],
@@ -232,6 +262,7 @@
                     {
                         "instructor": "Layla Hasan",
                         "CRN": "12340",
+                        "schedule": "Tue/Thu - 11:00 AM - 1:00 PM",
                         "capacity": 40,
                         "enrolledStudents": [
                             "stu106"

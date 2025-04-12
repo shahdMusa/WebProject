@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Lena Adams",
+        "username": "lena123",
+        "loggedIn": false,
+        "completedCourses": [
+            {"course":"cmps151", "grade" :"A"}
+        ],
+        "registeredCourses": [],
+        "pendingCourses": []
+    },
+    {
+        "name": "Khaled Adams",
+        "username": "kh33443",
+        "loggedIn": false,
+        "completedCourses": [],
+        "registeredCourses": [],
+        "pendingCourses": []
+    },
+    {
+        "name": "Maya Ali",
+        "username": "m23m4",
+        "loggedIn": false,
+        "completedCourses": [
+            {"course":"cmps151", "grade" :"A"},
+            {"course":"cmps251", "grade" :"B+"}
+        ],
+        "registeredCourses": [],
+        "pendingCourses": []
+    }
+]
