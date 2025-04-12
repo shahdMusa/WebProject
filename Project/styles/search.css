@@ -1,381 +1,396 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #EED6D3;
-  }
-  /* Header styling */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EED6D3;
+}
+
+/* Header styling */
 header {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Title section */
-  #title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  /* First div: University logo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Title section */
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* First div: University logo */
+#title div:first-child {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+#title div:first-child img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Second div: Title with <h1> */
+#title div:nth-child(2) {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title h1 {
+  background-color: #8A6E6E;
+  color: white;
+  font-family: 'Days One', sans-serif;
+  font-size: 55px;
+  width: 965px;
+  height: 83px;
+  text-align: center;
+  border-radius: 20px;
+  line-height: 83px;
+}
+
+/* Third div: Logout section */
+#title div:last-child {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logout {
+  background-color: #3C3235;
+  border-radius: 20px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#logout img {
+  width: 70px;
+  height: 50px;
+}
+
+#logout button {
+  background-color: #3C3235;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 8px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+#logout button:hover {
+  background-color: #B8B8B8;
+}
+
+/* Horizontal rule */
+hr {
+  border: none;
+  border-top: 8px solid black;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* Search Header Section */
+.search-header {
+  width: 100%;
+  /* full width of the page */
+  max-width: 1650px;
+  /* still keeping a max width for large screens */
+  height: 93px;
+  background-color: #E8B4B8;
+  border-radius: 20px;
+  margin: 20px auto;
+  /* center horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  /* some horizontal padding for smaller screens */
+}
+
+.main-button {
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: #8A6E6E;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.main-button:hover {
+  background-color: #bb99a2;
+}
+
+.search-header h2 {
+  background-color: #8A6E6E;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 654px;
+  /* title box max width */
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Days One', sans-serif;
+  font-size: 48px;
+  color: white;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* padding to keep content from touching edges */
+  box-sizing: border-box;
+}
+
+.search-header h2 img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  /* makes image white */
+}
+
+.spacer {
+  width: 130px;
+  /* Same as the Back button's approx width */
+  height: 1px;
+}
+
+
+/* Search Controls Section */
+.search-controls {
+  width: 100%;
+  max-width: 1650px;
+  height: 93px;
+  background-color: #E8B4B8;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.search-controls img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  /* makes it white */
+}
+
+.search-controls input {
+  width: 554px;
+  height: 43px;
+  border-radius: 30px;
+  border: none;
+  padding: 0 15px;
+  font-size: 18px;
+  background-color: #EED6D3;
+  outline: none;
+  font-family: 'Days One', sans-serif;
+}
+
+.search-controls button {
+  width: 136px;
+  height: 43px;
+  border-radius: 30px;
+  background-color: #EED6D3;
+  border: none;
+  font-size: 23px;
+  font-family: 'Days One', sans-serif;
+  font-weight: normal;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-controls button:hover {
+  background-color: #d8b6b0;
+}
+
+/* Courses Table Section */
+.courses-table {
+  width: 100%;
+  max-width: 1650px;
+  margin: 20px auto;
+  background-color: #E8B4B8;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  /* allow horizontal scroll on small screens */
+}
+
+.courses-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Days One', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+.courses-table thead {
+  background-color: #8A6E6E;
+  color: white;
+  font-size: 20px;
+}
+
+.courses-table thead th {
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.courses-table tbody td {
+  padding: 12px 10px;
+  background-color: #EED6D3;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.courses-table tbody tr {
+  margin-bottom: 10px;
+  display: table-row;
+}
+
+.courses-table tbody tr:nth-child(even) td {
+  background-color: #f1dfdc;
+}
+
+
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: #3C3235;
+  background-color: transparent;
+}
+
+/* Horizontal rule in footer */
+footer hr {
+  width: 1381px;
+  height: 8px;
+  background-color: #3C3235;
+  border: none;
+  margin: 0 auto 20px auto;
+}
+
+/* Container for footer items  */
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Footer image */
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer text with separators */
+footer p {
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: #3C3235;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3c3235;
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+}
+
+footer hr {
+  width: 98%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1250px) {
   #title div:first-child {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  #title div:first-child img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  /* Second div: Title with <h1> */
-  #title div:nth-child(2) {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #title h1 {
-    background-color: #8A6E6E;
-    color: white;
-    font-family: 'Days One', sans-serif;
-    font-size: 55px;
-    width: 965px;
-    height: 83px;
-    text-align: center;
-    border-radius: 20px;
-    line-height: 83px; 
-  }
-  
-  /* Third div: Logout section */
-  #title div:last-child {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #logout {
-    background-color: #3C3235;
-    border-radius: 20px;
-    padding: 10px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  #logout img {
-    width: 70px;
-    height: 50px;
-  }
-  
-  #logout button {
-    background-color: #3C3235;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 8px;
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-  }
-  
-  #logout button:hover {
-    background-color: #B8B8B8;
-  }
-  
-  /* Horizontal rule */
-  hr {
-    border: none;
-    border-top: 8px solid black;
-    width: 100%; 
-    margin-top: 20px; 
-    margin-bottom: 0; 
+    width: 20%;
   }
 
-  /* Search Header Section */
-.search-header {
-    width: 100%; /* full width of the page */
-    max-width: 1650px; /* still keeping a max width for large screens */
-    height: 93px;
-    background-color: #E8B4B8;
-    border-radius: 20px;
-    margin: 20px auto; /* center horizontally */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 20px; /* some horizontal padding for smaller screens */
-  }
-  .main-button {
-    font-family: 'Days One', sans-serif;
-    font-size: 20px;
-    color: white;
-    background-color: #8A6E6E;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 15px;
+  #title h1 {
+    font-size: 50px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    height: auto;
+    padding: 10px;
   }
-  
-  .main-button:hover {
-    background-color: #bb99a2;
+
+  #logout {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #logout img {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  #logout button {
+    width: 100%;
+    font-size: 20px;
+  }
+
+
+  /*------------------------------------------*/
+
+
+  .search-header {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 15px;
   }
 
   .search-header h2 {
-    background-color: #8A6E6E;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 654px; /* title box max width */
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-family: 'Days One', sans-serif;
-    font-size: 48px;
-    color: white;
-    margin: 0 auto;
-    padding: 0 15px; /* padding to keep content from touching edges */
-    box-sizing: border-box;
+    font-size: 28px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
   }
-  
-  .search-header h2 img {
-    width: 40px;
-    height: 40px;
-    filter: brightness(0) invert(1); /* makes image white */
+
+  .main-button {
+    font-size: 18px;
+    padding: 8px 16px;
   }
-  
+
   .spacer {
-    width: 130px; /* Same as the Back button's approx width */
-    height: 1px;
+    display: none;
   }
 
-
-  /* Search Controls Section */
-.search-controls {
-    width: 100%;
-    max-width: 1650px;
-    height: 93px;
-    background-color: #E8B4B8;
-    border-radius: 20px;
-    margin: 20px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    box-sizing: border-box;
-    padding: 0 20px;
-  }
-  
-  .search-controls img {
-    width: 40px;
-    height: 40px;
-    filter: brightness(0) invert(1); /* makes it white */
-  }
-  
-  .search-controls input {
-    width: 554px;
-    height: 43px;
-    border-radius: 30px;
-    border: none;
-    padding: 0 15px;
-    font-size: 18px;
-    background-color: #EED6D3;
-    outline: none;
-    font-family: 'Days One', sans-serif;
-  }
-  
-  .search-controls button {
-    width: 136px;
-    height: 43px;
-    border-radius: 30px;
-    background-color: #EED6D3;
-    border: none;
-    font-size: 23px;
-    font-family: 'Days One', sans-serif;
-    font-weight: normal;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .search-controls button:hover {
-    background-color: #d8b6b0;
-  }
-  
-  /* Courses Table Section */
-.courses-table {
-    width: 100%;
-    max-width: 1650px;
-    margin: 20px auto;
-    background-color: #E8B4B8;
-    border-radius: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-x: auto; /* allow horizontal scroll on small screens */
-  }
-  
-  .courses-table table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: 'Days One', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    color: #333;
-  }
-  
-  .courses-table thead {
-    background-color: #8A6E6E;
-    color: white;
-    font-size: 20px;
-  }
-  
-  .courses-table thead th {
-    padding: 15px 10px;
-    border-radius: 10px;
-  }
-  
-  .courses-table tbody td {
-    padding: 12px 10px;
-    background-color: #EED6D3;
-    border-radius: 10px;
-    margin: 5px 0;
-  }
-  
-  .courses-table tbody tr {
-    margin-bottom: 10px;
-    display: table-row;
-  }
-  
-  .courses-table tbody tr:nth-child(even) td {
-    background-color: #f1dfdc;
-  }
-  
-
-
-  /* Footer styling */
-  footer {
-    text-align: center;
-    margin-top: 80px;
-    font-family: 'Days One', sans-serif;
-    font-size: 20px;
-    color: #3C3235;
-    background-color: transparent;
-  }
-  
-  /* Horizontal rule in footer */
-  footer hr {
-    width: 1381px;
-    height: 8px;
-    background-color: #3C3235;
-    border: none;
-    margin: 0 auto 20px auto;
-  }
-  
-  /* Container for footer items  */
-  footer .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  /* Footer image */
-  footer img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  /* Footer text with separators */
-  footer p {
-    font-family: 'Days One', sans-serif;
-    font-size: 20px;
-    color: #3C3235;
-  }
-  footer a {
-    text-decoration: none;
-    color: #3c3235;
-    font-family: 'Days One', sans-serif;
-    font-size: 20px;
-  }
-  footer hr {
-    width: 98%;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: 1250px) {
-    #title div:first-child {
-        width: 20%; 
-      }
-    
-      #title h1 {
-        font-size: 50px; 
-        font-weight: bold;
-        width: 100%;
-        height: auto;
-        padding: 10px;
-      }
-    
-      #logout {
-        width: 100%; 
-        margin-top: 10px;
-      }
-    
-      #logout img {
-        width: 0; 
-        height: 0;
-        display: none; 
-      }
-    
-      #logout button {
-        width: 100%; 
-        font-size: 20px; 
-      }
-    
-
-      /*------------------------------------------*/
-
-
-      .search-header {
-        flex-direction: column;
-        height: auto;
-        gap: 10px;
-        padding: 15px;
-      }
-    
-      .search-header h2 {
-        font-size: 28px;
-        max-width: 100%;
-        height: auto;
-        padding: 10px;
-      }
-    
-      .main-button {
-        font-size: 18px;
-        padding: 8px 16px;
-      }
-    
-      .spacer {
-        display: none;
-      }
-      /* Footer adjustments */
+  /* Footer adjustments */
   footer .footer-content {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    padding-top: 10px; 
+    padding-top: 10px;
   }
 
   footer hr {
@@ -384,14 +399,15 @@ header {
   }
 
   footer p {
-    font-size: 5vw !important; 
+    font-size: 5vw !important;
   }
 
   footer img {
     width: 40px;
     height: 40px;
   }
+
   footer .separator {
     display: none;
   }
-  }
+}

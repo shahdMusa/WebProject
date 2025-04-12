@@ -1,0 +1,180 @@
+body{
+    background-color: #EED6D3
+}
+.headr{
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+    align-items: center;
+    justify-content: center;
+}
+.headr > img{
+    height: 5rem;
+    width: 5rem;
+}
+.headr > h1{
+    background-color: #8A6E6E;
+    border-radius: 3rem;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  object-fit: contain;
+  padding: 0.5rem 1rem;
+}
+.dv{
+    height: 0.2rem;
+    background: linear-gradient(
+      to right, transparent,#000000, transparent
+    );
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  #table table,.grades-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+    background-color: #E8B4B8;
+  }
+  
+  #table th, #table td ,.grades-table th, .grades-table td{
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    background-color: #E8B4B8;
+  }
+  
+  #table th, .grades-table th {
+    background-color: #E8B4B8;
+    font-weight: bold;
+  }
+  
+  #table tr:last-child td, .grades-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  #table tr:hover td {
+    background-color: #EED6D3;
+  }
+  .high {
+    background-color: #8A6E6E !important;
+    font-weight: bold;
+  }
+select{
+  border-radius: 3rem;
+  background-color: #EED6D3;
+}
+
+  #nav {
+    background-color: #E8B4B8;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    font-weight: bold;
+    padding: 10px; 
+    gap: 10px; 
+    border-radius: 3rem;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  #courseSearch {
+    padding: 5px;
+    border-radius: 3rem;
+    width: 350px;
+    background-color: #EED6D3;
+
+  }
+  
+  #searchBtn img {
+    display: block; 
+    background-color: #EED6D3;
+    padding: 0.2rem;
+    border-radius: 3rem;
+  }
+#save-status-btn {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 3rem;
+  background-color: #E8B4B8;
+  width: 150px;
+  margin: 0 auto;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+}
+#save-status-btn:hover {
+  background-color:#EED6D3;
+
+}
+#addcourse {
+  margin-top: 30px;
+  background-color: #8A6E6E;
+  border-radius: 3rem;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#addcourse h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #3C3235;
+  padding: 0.5rem;
+  width: 350px;
+  border-radius: 3rem;
+}
+#course-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+#course-form input, #course-form select{
+  height: 30px;
+  border-radius: 2rem;
+  background-color: #EED6D3;
+  border-radius: 2rem;
+  margin-bottom: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#course-form button, .submit-btn {
+  grid-column: span 2;
+  padding: 7px;
+  background-color: #E8B4B8;
+  border-radius: 3rem;
+  text-align: center;
+  width: 200px;
+}
+
+#course-form button:hover {
+  background-color: #EED6D3;
+}
+main {
+  text-align: center;
+}
+
+.class-selection{
+  border-radius: 3rem;
+  background-color: #8A6E6E;
+  margin-bottom: 20px;
+  padding: 0.7rem;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+#classSelect{
+  padding: 0.2rem;
+  background-color: #EED6D3;
+  border-radius: 3rem;
+  width: 200px;
+}
+.submit-btn{
+  margin-top: 20px;
+}

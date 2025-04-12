@@ -20,7 +20,7 @@
     {
         "name": "Maya Ali",
         "username": "m23m4",
-        "loggedIn": false,
+        "loggedIn": true,
         "completedCourses": [
             {"course":"cmps151", "grade" :"A"},
             {"course":"cmps251", "grade" :"B+"}

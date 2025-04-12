@@ -4,55 +4,76 @@
     <title>CSE Department</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/stylesheet.css" />
+    <link rel="stylesheet" href="/Project/styles/stylesheet-s.css" />
+    <script src="/Project/Scripts/courseManage.js"></script>
   </head>
   <body>
     <header>
-        <section class="headr">
-        <img src="images/biglogo.png" alt="icon">
-        <h1>CSE Student Management</h1>
-        <div>
-            <img src="images/user.png" alt="icon">
-            <p></p>
-        </div>
-    </section>
-        <div class="dv"></div>
-    </header>
+      <section id="title">
+          <div>
+              <img src="/Project/icons/university.png" alt="University logo">
+          </div>
+          <div>
+              <h1>CSE Student Management</h1>
+          </div>
+          <div>
+              <fieldset id="logout">
+                  <img src="/Project/icons/user.png" alt="user logo">
+                  <button type="button">logout</button>
+              </fieldset>
+          </div>
+      </section>
+      <hr>
+      <div class="dv"></div>
+    </header>
 
     <main>
-        <section id="nav">
-            <img src="images/search.png" alt="icon">
-            <p></p>
-            <button></button>
-            <div></div>
-        </section>
-
+      <section id="nav">
+        <label for="courseSearch">Search Course No.:</label>
+        <input type="text" id="courseSearch" placeholder="e.g., cmps151" />
+        <button id="searchBtn" style="background: none; border: none; cursor: pointer;">
+          <img src="/Project/icons/search.png" alt="Search" width="24" />
+        </button>
+      </section>
         <section id="table">
             <table>
-                <tr>
-                    <th>Course No.</th>
-                    <th>Course Name</th>
-                    <th>Instructor</th>
-                    <th>Status</th>
-                    <th>Time/Day</th>
-                    <th>Registered Count</th>
-                </tr>
+              <tr>
+                <th>Course No.</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Status</th>
+                <th>Time/Day</th>
+                <th>Registered Count</th>
+              </tr>
             </table>
-        </section>
+          </section>
+          
 
         <section id="addcourse">
-            
-        </section>
+            <h2>Add a New Course</h2>
+            <form id="course-form">
+                <input type="text" id="courseNo" placeholder="Course No. (e.g., cmps151)" required />
+                <input type="text" id="courseName" placeholder="Course Name" required />
+                <input type="text" id="instructor" placeholder="Instructor Name" required />
+                <input type="text" id="status" placeholder="Status " required />
+                <input type="text" id="timeDay" placeholder="Schedule (e.g., Mon/Wed 9-11)" required />
+                <input type="number" id="registeredCount" placeholder="Capacity" required />
+                <button type="submit">Add Course</button>
+              </form>              
+          </section>          
         <div class="dv"></div>
     </main>
 
     <footer>
-        <img src="images/code.png" alt="icon">
-        <a href="#">Qatar University CSE Department</a>
-        <p> | </p>
-        <a href="mailto:CSEDepartment@qu.edu.qa">CSEDepartment@qu.edu.qa</a>
-        <p> | </p>
-        <a href="tel:+97412345678">+974 12345678</a>
-    </footer>
+      <hr>
+      <div class="footer-content">
+          <img src="/Project/icons/code.png" alt="Code logo">
+          <a href="#">Qatar University CSE Department</a>
+          <p class="separator"> | </p>
+          <a href="mailto:CSEDepartment@qu.edu.qa">CSEDepartment@qu.edu.qa</a>
+          <p class="separator"> | </p>
+          <a href="tel:+97412345678">+974 12345678</a>
+      </div>
+    </footer>
 </body>
 </html>

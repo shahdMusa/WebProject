@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>register</title>
+  <link rel="stylesheet" href="/Project/styles/stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+
+  <script src="/Project/Scripts/pathScript.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <section class="headr">
+      <img src="/Project/icons/university.png" alt="icon">
+      <h1>CSE Student Management</h1>
+      <div id="logout">
+        <button type="button"><img src="/Project/icons/user.png" alt="icon">logout</button>
+      </div>
+    </section>
+    <hr>
+  </header>
+  <main>
+    <div id="learning-path-container">
+      <label for="path">Select:</label>
+      <select name="path" id="path">
+        <option value="" disabled selected>—</option>
+        <option value="completed">Successfully Completed Courses</option>
+        <option value="in-progress">In progress Courses</option>
+        <option value="pending">Pending Courses</option>
+      </select>
+    </div>
+    <div id="path-table-container"></div>
+  </main>
+  <div class="foot">
+    <hr>
+  </div>
+  <footer>
+    <img src="/Project/icons/code.png" alt="icon">
+    <a href="#">Qatar University CSE Department</a>
+    <p> | </p>
+    <a href="mailto:CSEDepartment@qu.edu.qa">CSEDepartment@qu.edu.qa</a>
+    <p> | </p>
+    <a href="tel:+97412345678">+974 12345678</a>
+  </footer>
+</body>
+
+</html>

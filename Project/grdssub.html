@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade Submission</title>
-    <link rel="stylesheet" href="/stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grade Submission</title>
+  <link rel="stylesheet" href="/Project/styles/stylesheet-s.css" />
+  <script src="/Project/Scripts/script.js"></script>
 </head>
 <body>
-    <header>
-        <img src="images/biglogo.png" alt="icon">
-        <h1>CSE Grades Submission</h1>
+
+  <header>
+    <section id="title">
         <div>
-            <img src="images/user.png" alt="icon">
-            <p></p>
+            <img src="/Project/icons/university.png" alt="University logo">
         </div>
-    </header>
-
-    <main>
-        <div class="class-selection">
-            <label for="classSelect">Select Class:</label>
-            <select id="classSelect">
-                <option value="cse101">CSE 101 - Intro to CS</option>
-            </select>
+        <div>
+            <h1>CSE Student Management</h1>
         </div>
+        <div>
+            <fieldset id="logout">
+                <img src="/Project/icons/user.png" alt="user logo">
+                <button type="button">logout</button>
+            </fieldset>
+        </div>
+    </section>
+    <hr>
+    <div class="dv"></div>
+    </header>
 
-        <section class="grades-table">
-            <table>
-                    <tr>
-                        <th>Student ID</th>
-                        <th>Name</th>
-                        <th>Final Grade</th>
-                    </tr>
-            </table>
-            <button class="submit-btn">Submit Grades</button>
-        </section>
-    </main>
+  <main>
+    <div class="class-selection">
+      <label for="classSelect">Select Class:</label>
+      <select id="classSelect">
+      </select>
+    </div>
 
-    <footer>
-        <img src="images/code.png" alt="icon">
+    <section class="grades-table">
+      <table>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Final Grade</th>
+        </tr>
+      </table>
+      <button class="submit-btn">Submit Grades</button>
+    </section>
+    <div class="dv"></div>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="footer-content">
+        <img src="/Project/icons/code.png" alt="Code logo">
         <a href="#">Qatar University CSE Department</a>
-        <p> | </p>
+        <p class="separator"> | </p>
         <a href="mailto:CSEDepartment@qu.edu.qa">CSEDepartment@qu.edu.qa</a>
-        <p> | </p>
+        <p class="separator"> | </p>
         <a href="tel:+97412345678">+974 12345678</a>
-    </footer>
+    </div>
+    </footer>
+
+  
 </body>
 </html>
