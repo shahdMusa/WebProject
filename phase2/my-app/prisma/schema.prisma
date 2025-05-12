@@ -1,0 +1,103 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./client"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Role {
+  name  String @id
+  users User[]
+}
+
+model User {
+  username   String      @id
+  password   String
+  fullName   String
+  email      String      @unique
+  phone      String
+  roleName   String
+  role       Role        @relation(fields: [roleName], references: [name], onDelete: Cascade, onUpdate: Cascade)
+  student    Student?
+  instructor Instructor?
+}
+
+model Student {
+  username         String            @id
+  user             User              @relation(fields: [userId], references: [username], onDelete: Cascade, onUpdate: Cascade)
+  userId           String            @unique
+  loggedIn         Boolean           @default(false)
+  enrollments      Enrollment[]
+  completedCourses CompletedCourse[]
+}
+
+model Instructor {
+  username String  @id
+  user     User    @relation(fields: [userId], references: [username], onDelete: Cascade, onUpdate: Cascade)
+  userId   String  @unique
+  classes  Class[]
+}
+
+model Subject {
+  name    String   @id
+  courses Course[]
+}
+
+model Course {
+  id            String            @id
+  name          String
+  subjectName   String
+  subject       Subject           @relation(fields: [subjectName], references: [name], onDelete: Cascade, onUpdate: Cascade)
+  status        String //"open" or "close"
+  prerequisites Prerequisite[]    @relation("CourseToPrereq")
+  requiredFor   Prerequisite[]    @relation("PrereqToCourse")
+  classes       Class[]
+  completedBy   CompletedCourse[]
+}
+
+model Prerequisite {
+  courseId       String
+  prerequisiteId String
+  passed         Boolean @default(false)
+  course         Course  @relation("CourseToPrereq", fields: [courseId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  prerequisite   Course  @relation("PrereqToCourse", fields: [prerequisiteId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@id([courseId, prerequisiteId])
+}
+
+model Class {
+  CRN          String       @id
+  schedule     String
+  capacity     Int
+  course       Course       @relation(fields: [courseId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  courseId     String
+  instructor   Instructor   @relation(fields: [instructorId], references: [username], onDelete: Cascade, onUpdate: Cascade)
+  instructorId String
+  enrollments  Enrollment[]
+}
+
+model Enrollment {
+  student   Student @relation(fields: [studentId], references: [username], onDelete: Cascade, onUpdate: Cascade)
+  class     Class   @relation(fields: [classId], references: [CRN], onDelete: Cascade, onUpdate: Cascade)
+  status    String //"registered" or "pending"
+  studentId String
+  classId   String
+
+  @@id([studentId, classId])
+}
+
+model CompletedCourse {
+  student   Student @relation(fields: [studentId], references: [username], onDelete: Cascade, onUpdate: Cascade)
+  studentId String
+  courseId  String
+  course    Course  @relation(fields: [courseId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  grade     String
+
+  @@id([studentId, courseId])
+}
