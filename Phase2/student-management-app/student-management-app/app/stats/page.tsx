@@ -1,5 +1,7 @@
 import { getServerSession } from "next-auth"
 import { authOptions } from "../api/auth/[...nextauth]/route"
+import { signOut } from "next-auth/react"
+
 import {
   topCourses,
   failureRates,
@@ -39,9 +41,18 @@ export default async function StatsPage() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold mb-8 text-center text-blue-800">
-        📊 Statistics Dashboard
-      </h1>
+      {/* Header with title + logout */}
+      <div className="flex justify-between items-center mb-8">
+        <h1 className="text-3xl font-bold text-blue-800">
+           Statistics Dashboard
+        </h1>
+        <button
+          onClick={() => signOut()}
+          className="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-600 transition-all"
+        >
+          Logout
+        </button>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <StatCard title="Top Courses">
